@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #25b048; 
+        }
+
+        .form {
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px; 
+            height: 400px;
+            justify-content: center;
+        }
+
+        .form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+           
+        }
+
+        .control {
+            margin-bottom: 15px;
+        }
+
+        .control label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .control input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .checkbox {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .checkbox input[type="checkbox"]{
+            margin-right: 5px;
+        }
+
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .links a {
+            color: #007bff; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <form action="/Login.html" method="post" class="form">  <b><i><h2>SIGN IN</h2></i></b>
+
+            <div class="control">
+                <label for="email">Enter Email:</label>
+                <input type="email" id="email" name="Username" placeholder="Enter Your Username" required> </div>
+            <div class="control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required> </div>
+            <div class="checkbox">
+                <input type="checkbox" id="remember" name="remember"> <label for="remember"><span>Remember Me</span></label> </div>
+            <button type="submit" class="btn">Sign In</button>  <div class="links">
+                <span>Forgot Password? <a href="/forgotpassword">Click Here</a></span>  <span>Don't Have An Account? <a href="/signup">Create One</a></span>  </div>
+        </form>
+    </div>
+
+</body>
+</html>
